@@ -1,0 +1,25 @@
+.FriendRequest {
+  width: 24vw;
+  padding: 2vh 0;
+  height: 75vh;
+  border: 1px solid;
+  position: absolute;
+  top: 15vh;
+  right: 3.5vw;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0.5px 5px #ccc;
+}
+.FriendRequest__head {
+  display: flex;
+  width: 100%;
+  padding: 1.5vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5vw;
+  border: 1px solid transparent;
+  border-bottom: 0.2px solid #ccc;
+  padding: 2vh 1.2vw;
+  font-size: 0.8rem;
+}

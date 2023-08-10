@@ -1,9 +1,12 @@
 import React from "react";
-import "./index.css";
 import "./App.css";
-
+import Post from "./page/post_page/Post";
 function App() {
-  return <div>App</div>;
+  return (
+    <>
+      <Post />
+    </>
+  );
 }
 
 export default App;
