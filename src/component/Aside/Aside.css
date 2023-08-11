@@ -2,14 +2,18 @@ body {
   position: relative;
 }
 .Aside {
-  /* border: 1px solid; */
+  border: 1px solid;
   position: fixed;
   top: 15vh;
   left: 2.5vw;
+  height: 85vh;
   width: 22vw;
   padding: 2vh 0.5vw;
   display: flex;
   flex-direction: column;
   gap: 2vh;
   overflow-y: scroll;
+}
+.Mycolor {
+  color: red;
 }
