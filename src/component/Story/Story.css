@@ -1,0 +1,49 @@
+.Story {
+  position: absolute;
+  top: 15vh;
+  left: 24.5vw;
+  width: 48vw;
+}
+.StoryWrapper {
+  border: 1px solid;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1vh 1vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+.StoryWrapper :is(.StoryRow1) {
+  width: 8vw;
+  height: 25vh;
+  gap: 1vh;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1rem;
+  padding-bottom: 2vh;
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
+}
+
+.StoryRow1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url(./img/bannier.jpg);
+}
+.avatar1 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  font-weight: 500;
+  color: black;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

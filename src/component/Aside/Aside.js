@@ -9,7 +9,16 @@ function Aside() {
       <GroupContent />
       <GroupContent />
       <GroupContent />
-      <Button value={"Test"} color={"Mycolor"} />
+      <GroupContent />
+      <GroupContent />
+      <GroupContent />
+      <GroupContent />
+      <GroupContent />
+      <GroupContent />
+      <GroupContent />
+      <GroupContent />
+      <Button value={"Test"} color={"test"} />
+      <Button value={"Test"} color={"lexi_luna"} />
     </section>
   );
 }

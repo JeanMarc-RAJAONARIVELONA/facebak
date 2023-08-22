@@ -14,6 +14,12 @@ body {
   gap: 2vh;
   overflow-y: scroll;
 }
-.Mycolor {
-  color: red;
+.test {
+  background-color: aqua;
+  color: black;
+}
+
+.lexi_luna {
+  background-color: rgb(194, 28, 228);
+  color: rgb(247, 0, 0);
 }
