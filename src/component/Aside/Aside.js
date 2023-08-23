@@ -1,25 +1,17 @@
 import React from "react";
 import "./Aside.css";
-import GroupContent from "../GroupContent/GroupContent";
-import Button from "../button/button";
+import { Box } from "@mui/material";
 function Aside() {
   return (
-    <section className="Aside">
-      <GroupContent />
-      <GroupContent />
-      <GroupContent />
-      <GroupContent />
-      <GroupContent />
-      <GroupContent />
-      <GroupContent />
-      <GroupContent />
-      <GroupContent />
-      <GroupContent />
-      <GroupContent />
-      <GroupContent />
-      <Button value={"Test"} color={"test"} />
-      <Button value={"Test"} color={"lexi_luna"} />
-    </section>
+    <Box
+      bgcolor={"azure"}
+      flex={2}
+      sx={{ display: { xs: "none", sm: "block" } }}
+    >
+      <Box position="fixed">
+        <p>side bar</p>
+      </Box>
+    </Box>
   );
 }
 
