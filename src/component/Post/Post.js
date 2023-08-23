@@ -1,19 +1,66 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
-import FriendRequest from "../FriendRequest/FriendRequest";
-import Aside from "../Aside/Aside";
-import CreatePost from "../CreatePost/CreatePost";
-import Story from "../Story/Story";
-import "./Post.css";
+import {
+  Avatar,
+  Card,
+  CardActions,
+  CardContent,
+  CardHeader,
+  CardMedia,
+  Checkbox,
+  IconButton,
+  Typography,
+} from "@mui/material";
+import {
+  Favorite,
+  FavoriteBorder,
+  MoreVert,
+  Share,
+  ThumbUp,
+  ThumbUpOffAlt,
+} from "@mui/icons-material";
+
 function Post() {
   return (
-    <>
-      <Navbar />
-      <Story />
-      <CreatePost />
-      <FriendRequest />
-      <Aside />
-    </>
+    <Card sx={{my:3}} >
+      <CardHeader
+        avatar={
+          <Avatar src="https://cdn.pixabay.com/photo/2016/11/29/20/22/girl-1871104_1280.jpg"></Avatar>
+        }
+        action={
+          <IconButton aria-label="settings">
+            <MoreVert />
+          </IconButton>
+        }
+        title="John Doe"
+      />
+      <CardMedia
+        component="img"
+        height="40%"
+        image="https://images.pexels.com/photos/11629649/pexels-photo-11629649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Paella dish"
+      />
+      <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          This impressive paella is a perfect party dish and a fun meal to cook
+          together with your guests. Add 1 cup of frozen peas along with the
+          mussels, if you like.
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+        <IconButton>
+          <Checkbox icon={<ThumbUpOffAlt />} checkedIcon={<ThumbUp />} />
+        </IconButton>
+        <IconButton aria-label="add to favorites">
+          <Checkbox
+            icon={<FavoriteBorder />}
+            checkedIcon={<Favorite sx={{ color: "red" }} />}
+          />
+        </IconButton>
+        <IconButton aria-label="share">
+          <Share />
+        </IconButton>
+      </CardActions>
+    </Card>
   );
 }
 

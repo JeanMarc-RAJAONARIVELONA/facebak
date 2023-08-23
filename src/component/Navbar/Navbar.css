@@ -1,116 +1,19 @@
-nav {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  background-color: var(--white);
-  top: 0;
-  left: 0;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 12vh;
-  padding: 0 2vw;
-  box-shadow: 0 1px 5px #ccc;
-}
-nav .nav__first {
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-.nav__first h1 {
-  font-size: 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5vw;
-  font-family: "Kaushan Script", cursive;
-}
-.nav__first h1 .fa-snowflake {
-  color: var(--primary-color);
-}
-.nav__first ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.nav__first ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0.5vw;
-  font-size: 1.2rem;
-  width: 46px;
-  height: 46px;
-  background: #eee;
+.Icon_hover {
+  padding: 3px;
   border-radius: 50%;
-  color: #adadad;
-  cursor: pointer;
+  color: #8f8f8f;
 }
-.nav__first ul li:hover {
-  color: var(--secondary-color);
-  background: #07f0bd38;
+
+.Icon_hover:hover {
+  color: var(--blue-color);
+  background-color: var(--primary-light);
 }
-.nav__search {
-  position: relative;
-  width: 24vw;
-  background: #eee;
-  padding: 2vh 0;
-  border-radius: 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 1rem;
+.fa-spin {
+  font-size: 1.3rem;
 }
-.nav__search .fa-magnifying-glass {
-  padding: 0 1vw;
-  color: #ccc;
-  cursor: pointer;
-  z-index: 1;
-}
-.nav__search input {
-  position: absolute;
-  width: 100%;
-  border-radius: 2rem;
-  background: transparent;
-  outline: none;
-  border: none;
-  padding: 1.5vh 3vw;
-  height: auto;
-}
-.nav__search input::placeholder {
-  font-size: 1rem;
-  color: #ccc;
-}
-nav .nav__second {
-  width: 40%;
-  /* border: 1px solid; */
-  display: flex;
-  justify-content: flex-end;
-}
-.nav__second li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0.2vw;
-  font-size: 1.4rem;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  color: var(--secondary-color);
-  cursor: pointer;
-}
-.avatar__content {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.avatar__content img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
+@media screen and (max-width: 600px) {
+  .fa-spin {
+    font-size: 1.3rem;
+    display: none;
+  }
 }

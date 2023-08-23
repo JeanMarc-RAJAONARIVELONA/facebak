@@ -1,14 +1,15 @@
 import React from "react";
 import "./FriendRequest.css";
+import { Box } from "@mui/material";
 function FriendRequest() {
   return (
-    <section className="FriendRequest">
-      <div className="FriendRequest__head">
-        <p>See all</p>
-        <p>Friend Request</p>
-      </div>
-      <div className="friendrequest__body"></div>
-    </section>
+    <Box
+      bgcolor={"aquamarine"}
+      flex={2}
+      sx={{ display: { xs: "none", sm: "block" } }}
+    >
+      <p>Friend Request</p>
+    </Box>
   );
 }
 

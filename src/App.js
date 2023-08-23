@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import Post from "./component/Post/Post";
+import Home from "./page/Home";
 function App() {
   return (
     <>
-      <Post />
+      <Home />
     </>
   );
 }

@@ -1,9 +1,3 @@
-.CreatePost {
-  position: absolute;
-  top: 42vh;
-  left: 24.5vw;
-  width: 48vw;
-}
 .CreatePostWrapper {
   width: 95%;
   margin: 2vh auto;
