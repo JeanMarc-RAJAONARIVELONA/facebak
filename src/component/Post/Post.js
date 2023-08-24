@@ -18,6 +18,7 @@ import {
   ThumbUp,
   ThumbUpOffAlt,
 } from "@mui/icons-material";
+import Badge from "@mui/material/Badge";
 
 function Post() {
   return (
@@ -47,15 +48,15 @@ function Post() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton>
+        <Badge badgeContent={1}>
           <Checkbox icon={<ThumbUpOffAlt />} checkedIcon={<ThumbUp />} />
-        </IconButton>
-        <IconButton aria-label="add to favorites">
+        </Badge>
+        <Badge badgeContent={2}>
           <Checkbox
-            icon={<FavoriteBorder />}
-            checkedIcon={<Favorite sx={{ color: "red" }} />}
+              icon={<FavoriteBorder />}
+              checkedIcon={<Favorite sx={{ color: "red" }} />}
           />
-        </IconButton>
+        </Badge>
         <IconButton aria-label="share">
           <Share />
         </IconButton>
