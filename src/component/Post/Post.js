@@ -19,16 +19,16 @@ import {
   ThumbUpOffAlt,
 } from "@mui/icons-material";
 import Badge from "@mui/material/Badge";
-import axios from "axios";
+//import axios from "axios";
 
 function Post() {
-  const [post,setPost] = React.useState([])
+ /* const [post,setPost] = React.useState([])
   React.useEffect(()=>{
     axios.get("http://localhost:8080/posts")
       .then((response)=>{
         console.log(response.data);
       })
-  },[])
+  },[])*/
   return (
     <Card sx={{my:3}} >
       <CardHeader
