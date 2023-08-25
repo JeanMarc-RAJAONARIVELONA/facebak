@@ -24,18 +24,17 @@
 }
 .CreatePostMiddle {
   width: 85%;
-  background-color: #ffffff63;
   margin: 0 auto;
-  padding: 10px;
-  border-radius: 12rem;
+  height: 12vh;
 }
-.CreatePostMiddle button {
+.CreatePostMiddle .CreatePostinput {
   width: 100%;
-  background-color: #ffffff63;
-  cursor: pointer;
+  border-radius:10px;
   background: transparent;
-  border: none;
+  padding: 4vh 0 0 10px;
+  border: 0.5px solid #85858542;
   outline: none;
+  height: 100%;
 }
 .CreatePostBottom :is(.video, .image, .Camera) {
   display: flex;

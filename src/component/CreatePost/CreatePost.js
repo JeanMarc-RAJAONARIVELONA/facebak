@@ -9,7 +9,7 @@ function CreatePost() {
           <p>Create Post</p>
         </div>
         <div className="CreatePostMiddle">
-          <button>What'your mind?</button>
+          <textarea name="create post text" className={"CreatePostinput"} id="CreatePostinput" ></textarea>
         </div>
         <div className="CreatePostBottom">
           <div className="video">
