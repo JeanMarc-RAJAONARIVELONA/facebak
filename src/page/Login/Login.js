@@ -1,5 +1,6 @@
 import React from 'react'
 import './css.css'
+import Register from "../Register/Register";
 export default function Login() {
   return (
     <>
@@ -23,7 +24,7 @@ export default function Login() {
                 </div>
                 <div class="pass-forget">
                     <p class="lost-password">Lost your password ?</p>
-                    <p class="register"><a href="./Register/register.html">Registration</a></p>
+                    <p class="register" onClick={Register}>Registration</p>
                 </div>
                 
             </div>
