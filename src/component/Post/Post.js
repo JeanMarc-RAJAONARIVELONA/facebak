@@ -1,6 +1,8 @@
 import React from "react";
 import {
   Avatar,
+  Box,
+  Button,
   Card,
   CardActions,
   CardContent,
@@ -11,6 +13,7 @@ import {
   Typography,
 } from "@mui/material";
 import {
+  ChatBubbleOutline,
   Favorite,
   FavoriteBorder,
   MoreVert,
@@ -19,18 +22,10 @@ import {
   ThumbUpOffAlt,
 } from "@mui/icons-material";
 import Badge from "@mui/material/Badge";
-//import axios from "axios";
 
 function Post() {
- /* const [post,setPost] = React.useState([])
-  React.useEffect(()=>{
-    axios.get("http://localhost:8080/posts")
-      .then((response)=>{
-        console.log(response.data);
-      })
-  },[])*/
   return (
-    <Card sx={{my:3}} >
+    <Card sx={{ my: 3 }}>
       <CardHeader
         avatar={
           <Avatar src="https://cdn.pixabay.com/photo/2016/11/29/20/22/girl-1871104_1280.jpg"></Avatar>
@@ -61,14 +56,35 @@ function Post() {
         </Badge>
         <Badge badgeContent={2}>
           <Checkbox
-              icon={<FavoriteBorder />}
-              checkedIcon={<Favorite sx={{ color: "red" }} />}
+            icon={<FavoriteBorder />}
+            checkedIcon={<Favorite sx={{ color: "red" }} />}
           />
         </Badge>
-        <IconButton aria-label="share">
-          <Share />
-        </IconButton>
       </CardActions>
+      <Box
+        sx={{
+          border: "1px solid ",
+          p: "1vh 1vw",
+          mx: "2vw",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-around",
+        }}
+      >
+        <Button variant="outlined" startIcon={<ThumbUpOffAlt />}>
+          Like
+        </Button>
+        <Button variant="outlined" startIcon={<FavoriteBorder />}>
+          Love
+        </Button>
+        <Button variant="outlined" startIcon={<ChatBubbleOutline />}>
+          comment
+        </Button>
+        <Button variant="outlined" startIcon={<Share />}>
+          Share
+        </Button>
+      </Box>
     </Card>
   );
 }
