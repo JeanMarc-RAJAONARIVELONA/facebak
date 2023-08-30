@@ -143,7 +143,7 @@ h2::after{
     left: 10px;
     bottom: 0;
 }
-button.btn {
+.btn {
     margin-top: 2rem;
     border: 1px solid transparent;
     width: 7rem;
@@ -157,7 +157,7 @@ button.btn {
         transition: all .3s ease-in-out;
     }
 
-button.btn:hover{
+.btn:hover{
     background-color: #34b7f1;
 }
 
@@ -186,3 +186,14 @@ label{
 
 }
 
+.error-message{
+    display: flex;
+    justify-content: center;
+    color: red;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.show-message {
+    opacity: 1;
+  }
